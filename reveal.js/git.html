@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="JCC">
+  <title>Git-Cheat-Sheet</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Git-Cheat-Sheet</h1>
+  <p class="author">JCC</p>
+  <p class="date">Jan 13, 2017</p>
+</section>
+
+<section><section id="代码仓库" class="titleslide slide level2"><h2>代码仓库</h2></section><section id="工作流程" class="slide level3">
+<h3>工作流程</h3>
+<figure>
+<img src="bg2015120901.png" />
+</figure>
+<ul>
+<li class="fragment">远程仓库<br />
+</li>
+<li class="fragment">本地仓库<br />
+</li>
+<li class="fragment">暂存区<br />
+</li>
+<li class="fragment">工作区</li>
+</ul>
+</section><section id="远程仓库" class="slide level3">
+<h3>远程仓库</h3>
+<pre><code>$ git remote -v
+  origin  https://github.com/xbcx/xstarp.git (fetch)
+  origin  https://github.com/xbcx/xstarp.git (push)</code></pre>
+</section><section id="本地仓库" class="slide level3">
+<h3>本地仓库</h3>
+<pre><code>$ git branch -vva
+* jcc                     a8f6410 [origin/jcc] Merge pull request #23
+  remotes/origin/dev      a8f6410 Merge pull request #23 from xbcx/mmm
+  remotes/origin/master   ae4ffdb Merge pull request #27 from xbcx/hotfix</code></pre>
+</section><section id="暂存区" class="slide level3">
+<h3>暂存区</h3>
+<pre><code>$ git commit -m &#39;demo&#39;
+  [jcc cf11507] &#39;demo&#39;
+  1 file changed, 53 insertions(+)</code></pre>
+</section><section id="工作区" class="slide level3">
+<h3>工作区</h3>
+<pre><code>$ git add .</code></pre>
+</section></section>
+<section><section id="常用命令" class="titleslide slide level2"><h2>常用命令</h2></section><section id="命令清单" class="slide level3">
+<h3>命令清单</h3>
+<ul>
+<li class="fragment">git clone</li>
+<li class="fragment">git fetch</li>
+<li class="fragment">git merge</li>
+<li class="fragment">git pull</li>
+<li class="fragment">git add</li>
+<li class="fragment">git commit</li>
+<li class="fragment">git push</li>
+<li class="fragment">git remote</li>
+</ul>
+</section><section id="命令详解" class="slide level3">
+<h3>命令详解</h3>
+<p><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote">Git远程操作详解</a></p>
+</section><section id="命令详解-1" class="slide level3">
+<h3>命令详解</h3>
+<ul>
+<li class="fragment">合并</li>
+<li class="fragment">git merge branch-other</li>
+<li class="fragment"><p>有冲突的时候感觉不好用</p></li>
+<li class="fragment">添加</li>
+<li class="fragment">git add file/dir</li>
+<li class="fragment"><p>git add .</p></li>
+</ul>
+</section><section id="命令详解-2" class="slide level3">
+<h3>命令详解</h3>
+<ul>
+<li class="fragment">删除</li>
+<li class="fragment"><p>git rm file/dir</p></li>
+<li class="fragment">提交</li>
+<li class="fragment">git commit -m 'message'</li>
+<li class="fragment"><p>git commit -am 'message2'</p></li>
+</ul>
+</section></section>
+<section><section id="工作流程-1" class="titleslide slide level2"><h2>工作流程</h2></section><section id="基本流程" class="slide level3">
+<h3>基本流程</h3>
+<ul>
+<li class="fragment">新建代码库</li>
+<li class="fragment">新建本地分支</li>
+<li class="fragment">增加/修改/删除文件</li>
+<li class="fragment">提交到暂存区</li>
+<li class="fragment">提交到本地仓库</li>
+<li class="fragment">本地仓库与远程同步</li>
+</ul>
+</section><section id="新建代码库" class="slide level3">
+<h3>新建代码库</h3>
+<ul>
+<li class="fragment">git init [project-name]</li>
+<li class="fragment">git clone [url]</li>
+<li class="fragment">webstorm/phpstorm checkout from vision contrl</li>
+</ul>
+</section><section id="新建本地分支" class="slide level3">
+<h3>新建本地分支</h3>
+<ul>
+<li class="fragment">git branch [branch-name]</li>
+<li class="fragment">git checkout [branch-name]</li>
+</ul>
+</section><section id="增加修改删除文件" class="slide level3">
+<h3>增加/修改/删除文件</h3>
+<ul>
+<li class="fragment">在工作区修改</li>
+<li class="fragment">提交修改到暂存区</li>
+<li class="fragment"><p>git add .</p></li>
+<li class="fragment">撤销修改</li>
+<li class="fragment">git checkout [file]</li>
+<li class="fragment"><p>git reset [file]/[commit]/HEAD<sup>(HEAD</sup>^/HEAD~3)</p></li>
+</ul>
+</section><section id="提交暂存区内容到本地仓库" class="slide level3">
+<h3>提交暂存区内容到本地仓库</h3>
+<ul>
+<li class="fragment">git commit -m '00'</li>
+<li class="fragment">git commit -am '00'</li>
+</ul>
+</section><section id="本地仓库与远程同步" class="slide level3">
+<h3>本地仓库与远程同步</h3>
+<ul>
+<li class="fragment">git push</li>
+<li class="fragment">git pull</li>
+<li class="fragment">git fetch [remote]</li>
+<li class="fragment">git merge [branch]</li>
+</ul>
+</section></section>
+<section><section id="分支管理策略" class="titleslide slide level2"><h2>分支管理策略</h2></section><section id="git-flow" class="slide level3">
+<h3>git flow</h3>
+<ul>
+<li class="fragment">长期分支：master + dev</li>
+<li class="fragment">临时分支：feature + hotfix</li>
+</ul>
+</section><section id="github-flow" class="slide level3">
+<h3>github flow</h3>
+<ul>
+<li class="fragment">长期分支：master</li>
+<li class="fragment">临时分支：其他</li>
+</ul>
+</section><section id="gitlib-flow" class="slide level3">
+<h3>gitlib flow</h3>
+<ul>
+<li class="fragment">长期分支：master + pre-production + production</li>
+<li class="fragment">临时分支：其他</li>
+</ul>
+</section></section>
+<section><section id="参考" class="titleslide slide level2"><h2>参考</h2></section><section id="参考链接" class="slide level3">
+<h3>参考链接</h3>
+<ul>
+<li class="fragment"><p><a href="http://www.ruanyifeng.com/blog/2015/08/git-use-process.html">Git 使用规范流程</a></p></li>
+<li class="fragment"><p><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote">Git远程操作详解</a></p></li>
+<li class="fragment"><p><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">常用 Git 命令清单</a></p></li>
+<li class="fragment"><p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137621280731812dec22ecc9b44f4b2ca1c680f181a5b000">Git教程-廖雪峰</a></p></li>
+<li class="fragment"><p><a href="https://git-scm.com/book/zh/v2">Git-Book</a></p></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

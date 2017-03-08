@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>slide4md</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/slide4md.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="https://github.com/impress/impress.js/blob/master/favicon.png?raw=true" />
+    <link rel="apple-touch-icon" href="https://github.com/impress/impress.js/blob/master/apple-touch-icon.png?raw=true" />
+
+</head>
+
+
+<body class="global impress-not-supported">
+
+<div class="no-support-message">
+    <p>尊驾的浏览器太老土啦！<b>无法满足impress.js的要求</b>，现在你只能看到一些最朴素的演示画面。</p>
+    <p>为了欣赏漂亮的演示画面，请使用先进、优雅、快速、美丽、免费的现代浏览器，比如 <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> 。</p>
+</div>
+
+<div class="global-nav">
+    <a href="#overview" class="nav-overview">OVERVIEW</a>
+</div>
+
+<div id="impress">
+    <div id="begin" class="step section" data-x="-1000" data-y="3000" >
+        <q>This is a impress.js.demo!<br/>
+        Powered by impress.js.</q>
+    </div>
+
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="15">
+    </div>
+
+    <div class="step section" data-x="-2000" data-y="-1500" data-z="10">
+        <q>impress.js.demo <br/>
+        Powered by impress.js</q>
+    </div>
+
+    <div class="step" data-x="2500" data-y="-1500" data-z="-500">
+        id class prop <br/>
+        id = impress <br/>
+        class = impress-not-supported,impress-supported,impress-enabled <br/>
+        class = step,active,past,present,future <br/>
+        prop = data-x,data-y,data-z,data-scale <br/>
+        prop = data-rotate,data-rotate-x,data-rotate-y,data-rotate-z <br/>
+    </div>
+
+    <div class="step" data-x="3000" data-y="2000" data-z="500">
+        api <br/>
+        var api = impress();<br/>
+        api.init();<br/>
+        api.next();<br/>
+        api.prev();<br/>
+        api.goto( idx | id | element, [duration] );<br/>
+    </div>
+
+    <div class="step" data-x="0" data-y="0">
+        零基础的前端开发初学者应如何系统地学习？－－知乎问题
+    </div>
+
+    <div class="step" data-x="500" data-y="0">
+        回答者－－张帅，大前端，杭州 互联网，天猫 前端，吉林大学 计算机应用技术
+    </div>
+
+    <div class="step" data-x="500" data-y="-400">
+        网站开发大致分为前端和后端。
+        前端主要负责实现视觉和交互效果，以及与服务器通信，完成业务逻辑，其核心价值在于对用户体验的追求。
+        可以按如下思路学习系统学习：
+    </div>
+
+    <div class="step" data-x="500" data-y="-800" data-scale="0.5">
+        基础知识：
+        1. html + css 这部分建议在 <a href="http://www.w3school.com.cn"></a> w3school在线教程上学习，边学边练，每章后还有小测试。之后可以模仿一些网站做些页面。
+    </div>
+    <div class="step" data-x="1000" data-y="-800" data-scale="0.5">
+        2. javascript 要学的内容实在很多，如果没有其他编程语言的基础的话，学起来可能要费些力，还是建议先在 w3school上学习。之后建议马上看《javascript语言精粹》，js是一门很混乱的语言，这本书能够帮助你区分哪些是语言的精华，哪些是糟粕，对于语言精华，应该深入学习。糟粕部分能看懂别人写的代码就行，自己就不用尝试了。
+    </div>
+
+    <div class="step" data-x="0" data-y="-800" data-z="-3000" data-rotate="90">
+        对于习惯看视频学习的同学，以上内容也可以在 <a href="http://www.imooc.com/">慕课网-国内最大的IT技能学习平台</a>上学习。虽然我没用过，但好几位同学推荐过了，大概看了下，内容还不错。
+    </div>
+
+
+    <div class="step" data-x="-2600" data-y="-800" data-z="-3000" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="4">
+        进阶：
+        有了以上基础，就可以进行一般的静态网页设计，不过对于复杂的页面还需要进一步学习。
+    </div>
+
+    <div id="bored" class="step section" data-x="-1000" data-y="-1500">
+        <q>Aren’t you just <b>bored</b> with all those sections-based presentations?</q>
+    </div>
+
+    <div class="step section" data-x="0" data-y="-1500">
+        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ section decks?</q>
+    </div>
+
+    <div class="step section" data-x="1000" data-y="-1500">
+        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">then you should try</span>
+        <h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>It’s a <strong>presentation tool</strong> <br/>
+            inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
+            and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>and <b>tiny</b> ideas</p>
+    </div>
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>want to know more?</p>
+        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>one more thing...</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
+    </div>
+
+    <div class="step section" data-x="-6000" data-y="-3000">
+        <strong>测试</strong>
+    </div>
+
+    <div id="end" class="step section" data-x="3500" data-y="4000">
+        Thank you !
+    </div>
+
+</div>
+
+<script src="../public/js/jquery-2.2.3.min.js"></script>
+
+<script>
+//    $(window).one("mousedown", function(){
+//        $('.public-init').hide();
+//    });
+//    $(window).one("keydown", function(){
+//        $('.public-init').hide();
+//    });
+</script>
+
+<script src="js/impress.js"></script>
+
+<script>
+    impress().init();
+</script>
+
+</body>
+</html>
