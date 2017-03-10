@@ -1,0 +1,25 @@
+http://pandoc.org/demos.html
+
+jcc = example
+
+
+HTML fragment:
+pandoc jcc.md -o jcc.html
+
+
+Standalone HTML file:
+pandoc -s jcc.md -o jcc.html
+
+
+HTML with smart quotes, table of contents, CSS, and custom footer:
+pandoc -s -S --toc -c pandoc.css -A footer.html jcc.md -o jcc.html
+
+
+Converting a web page to markdown:
+pandoc -s -r html http://www.gnu.org/software/make/ -o jcc.text
+
+
+HTML slide shows:
+pandoc -s --mathml -i -t dzslides jcc.md -o jcc.html
+pandoc -s --webtex -i -t slidy jcc.md -o jcc.html
+pandoc -s --mathjax -i -t revealjs jcc.md -o jcc.html
